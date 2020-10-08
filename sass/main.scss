@@ -1,0 +1,139 @@
+@import "reset";
+@import "animations";
+
+$delay: 400ms;
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: burlywood;
+    height: 75%;
+    width: 75%;
+    // position: relative;
+    // left: 12.5%;
+    // top: 12.5%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template: repeat(4, auto) /  repeat(5, minmax(75px, 1fr));
+    grid-template-areas: 
+    "a b c d e"
+    "f g h i j"
+    "k l m o p"
+    "q r s t u";
+}
+
+.box {
+    background: rgb(76, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: anime 3s ease-in-out backwards;
+
+}
+
+.box:nth-child(1) {
+    grid-area: a;
+} 
+
+.box:nth-child(2) {
+    grid-area: b;
+    animation-delay: calc(1 * #{$delay});
+}
+
+.box:nth-child(3) {
+    grid-area: c;
+    animation-delay: calc(2 * #{$delay});
+}
+
+.box:nth-child(4) {
+    grid-area: d;
+    animation-delay: calc(3 * #{$delay});
+}
+
+.box:nth-child(5) {
+    grid-area: e;
+    animation-delay: calc(4 * #{$delay});
+}
+
+.box:nth-child(6) {
+    grid-area: j;
+    animation-delay: calc(5 * #{$delay});
+}
+
+.box:nth-child(7) {
+    grid-area: p;
+    animation-delay: calc(6 * #{$delay});
+}
+
+.box:nth-child(8) {
+    grid-area: u;
+    animation-delay: calc(7 * #{$delay});
+}
+
+.box:nth-child(9) {
+    grid-area: f;
+    animation-delay: calc(13 * #{$delay});
+}
+
+.box:nth-child(10) {
+    grid-area: g;
+    animation: middle 3s;
+}
+
+.box:nth-child(11) {
+    grid-area: h;
+    animation: middle 3s;
+}
+
+.box:nth-child(12) {
+    grid-area: i;
+    animation: middle 3s;
+}
+
+.box:nth-child(13) {
+    grid-area: k;
+    animation-delay: calc(12 * #{$delay});
+}
+
+.box:nth-child(14) {
+    grid-area: l;
+    animation: middle 3s;
+}
+
+.box:nth-child(15) {
+    grid-area: m;
+    animation: middle 3s;
+}
+
+.box:nth-child(16) {
+    grid-area: o;
+    animation: middle 3s;
+}
+
+.box:nth-child(17) {
+    grid-area: q;
+    animation-delay: calc(11 * #{$delay});
+}
+
+.box:nth-child(18) {
+    grid-area: r;
+    animation-delay: calc(10 * #{$delay});
+}
+
+.box:nth-child(19) {
+    grid-area: s;
+    animation-delay: calc(9 * #{$delay});
+}
+
+.box:nth-child(20) {
+    grid-area: t;
+    animation-delay: calc(8 * #{$delay});
+}
+
+
+
